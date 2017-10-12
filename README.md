@@ -28,16 +28,13 @@ I recently moved into a new house that had been abandon for a few years and the 
 
 ### Technical Details
 //   
-
-* wiring diagram
-
-
-
 * list of hardware used
   - Photon Redboard
   - Micro LED
   - push button 
   - breadboard cables 
+  
+The code below is the handler function for the Tweet subscription. I used IFTTT to subscribe to tweets with the hashtag #affirmation. I am using the handler to both print the tweets to serial in order to monitor, and also converting them to a string to print to the LED screen, which I have called oled below... 
  
 
 //
@@ -45,10 +42,32 @@ I recently moved into a new house that had been abandon for a few years and the 
 You can include code snippets here:
 
 ```
-Particle.subscribe("Execute", messageParse, MY_DEVICES);
+void print2lcd(const char *event, const char *data) {
+    
+  i++;  // increment counter upon msg received
+  Serial.print(i);      // optional for troubleshooting, prints counter to serial
+  Serial.println(event);  // optional for troubleshooting, prints Particle event name to serial
+  
+  if (data){
+    Serial.print(", data: "); // optional for troubleshooting
+    Serial.println(data); // optional for troubleshooting, prints Particle event data to serial
+    
+    String data_as_string(data);  // ***** this is important, convert char * to string for OLED printing
+//    myList.push_front(data_as_string); 
+    
+    oled.clear(PAGE);
+    oled.setCursor(0, 0);
+    
+     int buttonState = digitalRead(buttonPin); 
+ 
+if (buttonState == LOW){   
+    oled.println(data_as_string);  // print the Particle event data
+
+    oled.display(); // Draw to the screen
+    delay(500); 
+}
 ```
 
-but also link to your project's full code in this repository:  [photon.ino](photon.ino)
 
 **Wiring Diagram**
 
