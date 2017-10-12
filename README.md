@@ -28,11 +28,17 @@ I recently moved into a new house that had been abandon for a few years and the 
 
 ### Technical Details
 //   
-Here you should give an overview of the technical operation of your device, including:
-* A wiring diagram
+
+* wiring diagram
+
+
+
 * list of hardware used
-* Explanation of your
-* Link to code   
+  - Photon Redboard
+  - Micro LED
+  - push button 
+  - breadboard cables 
+ 
 
 //
 
@@ -46,4 +52,4 @@ but also link to your project's full code in this repository:  [photon.ino](phot
 
 **Wiring Diagram**
 
-![Wiring Diagram](WiringDiagram.png)
+![Fritzing diagram](redboard_OLED_bb.png)
