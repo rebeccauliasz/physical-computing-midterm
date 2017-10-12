@@ -18,11 +18,13 @@ I recently moved into a new house that had been abandon for a few years and the 
 
 **Finished Enclosure:**
 
-![Finished Enclosure](finished_enclosure.jpg)
+![Finished Enclosure](outside1.jpg)
+![Finished Enclosure2](outside2.jpg)
 
 **Electronics Exposed:**
 
-![Enclosure with electronics exposed](exposed_enclosure.jpg)
+![Enclosure with electronics exposed](wiring1.jpg)
+![Enclosure with electronics exposed2](wiring2.jpg)
 
 ### Technical Details
 //   
