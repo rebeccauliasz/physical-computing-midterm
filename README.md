@@ -34,7 +34,10 @@ I recently moved into a new house that had been abandon for a few years and the 
   - push button 
   - breadboard cables 
   
-The code below is the handler function for the Tweet subscription. I used IFTTT to subscribe to tweets with the hashtag #affirmation. I am using the handler to both print the tweets to serial in order to monitor, and also converting them to a string to print to the LED screen, which I have called oled below... 
+The code below is the handler function for the Tweet subscription. I used IFTTT to subscribe to tweets with the hashtag #affirmation. I am using the handler to both print the tweets to serial in order to monitor, and also converting them to a string to print to the LED screen, which I have called oled... 
+
+A button attached to the side of the camera, when released, will trigger the message, 
+YOU ARE INSECURE!" and while pressed, will trigger the oled to diplay the message, "waiting for affirmation..." until the twitter stream is triggered by IFTTT. When triggered, if the button is pressed, the tweets will print to the oled. 
  
 
 //
