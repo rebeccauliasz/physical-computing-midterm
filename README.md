@@ -39,8 +39,6 @@ The code below is the handler function for the Tweet subscription. I used IFTTT 
 
 //
 
-You can include code snippets here:
-
 ```
 void print2lcd(const char *event, const char *data) {
     
